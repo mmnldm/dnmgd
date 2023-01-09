@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 .display-none{
-    display: none;
+    @apply hidden;
 }
