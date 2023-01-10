@@ -5,16 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/strike.css">
 <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet" />
-<link rel="stylesheet" href="./css/tailwind.min.css">
+<!-- <link rel="stylesheet" href="./css/tailwind.min.css"> -->
 <script src="https://kit.fontawesome.com/1f649878fb.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </head>
-<body class="font-digital-font ">
+<body class="font-digital-font dark:bg-black dark:text-white ">
 
 <!---NAVBAR -->
-<nav class="container max-w-screen-xl mx-auto border-b border-black dark:border-white lg:px-8">
-    <div class="flex justify-between py-3 text-xl">
+<nav class=" mx-auto max-w-screen-xl border-b border-black dark:border-white lg:px-auto">
+    <div class="flex justify-between py-3 px-2 text-lg lg:text-3xl">
     <div>
         <a class="ml-2 strike" href="index.html">DNMGD </a>
     </div>
@@ -27,21 +28,21 @@
     <!--NAVBAR ENDS-->
 
 
-    <section class="py-10">
+    <section class="py-10 ">
 		<div class="container max-w-screen-xl mx-auto px-4">
 			
-<div class="flex flex-col md:flex-row gap-4">
-	<main  class="md:w-3/4">
+<div class="flex flex-col md:flex-row gap-4 ">
+	<main  class="md:w-3/4 dark:bg-black ">
 
-		<article class="border border-gray-200 bg-white shadow-sm rounded mb-5 p-3 lg:p-5">
+		<article class="border border-gray-200 bg-white shadow-sm rounded mb-5 p-3 lg:p-5 dark:bg-black dark:text-white">
 			
 			<!-- item-cart -->
-			<div class="flex flex-wrap lg:flex-row gap-5  mb-4">
+			<div class="flex flex-wrap lg:flex-row gap-5 mb-4">
 				<div class="w-full lg:w-2/5 xl:w-2/4">
 					<figure class="flex leading-5">
 						<div>
 							<div class="block w-16 h-16 rounded border border-gray-200 overflow-hidden">
-								<img src="images/items/1.jpg" alt="Title">
+								<img src="img/100.png" alt="Title">
 							</div>
 						</div>
 						<figcaption  class="ml-3">
@@ -50,20 +51,7 @@
 						</figcaption>
 					</figure>
 				</div>
-				<div class="">
-					<!-- selection -->	
-					<div class="w-24 relative">
-				    <select class="block appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full">
-				        <option>1</option>
-						<option>2</option>	
-						<option>3</option>	
-			      	</select>
-				    <i class="absolute inset-y-0 right-0 p-2 text-gray-400">
-				        <svg width="22" height="22" class="fill-current" viewBox="0 0 20 20"><path d="M7 10l5 5 5-5H7z"></path></svg>
-				    </i>
-				   </div>
-				   <!-- selection .//end -->	
-				</div>
+
 				<div>
 					<div class="leading-5">
 						<p class="font-semibold not-italic">$1156.00</p>
@@ -72,7 +60,7 @@
 				</div>
 				<div class="flex-auto">
 					<div class="float-right">
-						<a class="px-4 py-2 inline-block bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100" href="#">  Remove </a>
+						<a class="px-4 py-2 inline-block  bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 dark:bg-black dark:hover:bg-red-600 " href="#">  Remove </a>
 					</div>
 				</div>
 			</div> <!-- item-cart end// -->
@@ -85,7 +73,7 @@
 					<figure class="flex leading-5">
 						<div>
 							<div class="block w-16 h-16 rounded border border-gray-200 overflow-hidden">
-								<img src="images/items/2.jpg" alt="Title">
+								<img src="img/2.png" alt="Title">
 							</div>
 						</div>
 						<figcaption  class="ml-3">
@@ -94,20 +82,7 @@
 						</figcaption>
 					</figure>
 				</div>
-				<div class="">
-					<!-- selection -->	
-					<div class="w-24 relative">
-				    <select class="block appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full">
-				        <option>1</option>
-						<option selected>2</option>	
-						<option>3</option>	
-			      	</select>
-				    <i class="absolute inset-y-0 right-0 p-2 text-gray-400">
-				        <svg width="22" height="22" class="fill-current" viewBox="0 0 20 20"><path d="M7 10l5 5 5-5H7z"></path></svg>
-				    </i>
-				   </div>
-				   <!-- selection .//end -->	
-				</div>
+
 				<div>
 					<div class="leading-5">
 						<p class="font-semibold not-italic">$92.00</p>
@@ -116,7 +91,7 @@
 				</div>
 				<div class="flex-auto">
 					<div class="float-right">
-						<a class="px-4 py-2 inline-block bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100" href="#">  Remove </a>
+						<a class="px-4 py-2 inline-block  bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 dark:bg-black dark:hover:bg-red-600 " href="#">  Remove </a>
 					</div>
 				</div>
 			</div> <!-- item-cart end// -->
@@ -129,7 +104,7 @@
 					<figure class="flex leading-5">
 						<div>
 							<div class="block w-16 h-16 rounded border border-gray-200 overflow-hidden">
-								<img src="images/items/3.jpg" alt="Title">
+								<img src="img/3.png" alt="Title">
 							</div>
 						</div>
 						<figcaption  class="ml-3">
@@ -138,20 +113,7 @@
 						</figcaption>
 					</figure>
 				</div>
-				<div class="">
-					<!-- selection -->	
-					<div class="w-24 relative">
-				    <select class="block appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full">
-				        <option>1</option>
-						<option>2</option>	
-						<option>3</option>	
-			      	</select>
-				    <i class="absolute inset-y-0 right-0 p-2 text-gray-400">
-				        <svg width="22" height="22" class="fill-current" viewBox="0 0 20 20"><path d="M7 10l5 5 5-5H7z"></path></svg>
-				    </i>
-				   </div>
-				   <!-- selection .//end -->	
-				</div>
+
 				<div>
 					<div class="leading-5">
 						<p class="font-semibold not-italic">$980.00</p>
@@ -160,7 +122,7 @@
 				</div>
 				<div class="flex-auto">
 					<div class="float-right">
-						<a class="px-4 py-2 inline-block bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100" href="#">  Remove </a>
+						<a class="px-4 py-2 inline-block  bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 dark:bg-black dark:hover:bg-red-600 " href="#">  Remove </a>
 					</div>
 				</div>
 			</div> <!-- item-cart end// -->
@@ -178,22 +140,22 @@
 
 
                 </article>
-            </main>
+            </main class=" ">
     
-            <aside class="md:w-1/4">
+            <aside class="md:w-1/4 ">
         
-                <article class="border border-gray-200 bg-white shadow-sm rounded mb-5 p-3 lg:p-5">
+                <article class="border border-gray-200 bg-white shadow-sm rounded dark:bg-black mb-5 p-3 lg:p-5">
         
                     <ul class="mb-5">
-                        <li class="flex justify-between text-gray-600  mb-1"> 
+                        <li class="flex justify-between text-black dark:text-white  mb-1"> 
                             <span>Total price:</span> 
                             <span>$245.97</span>
                         </li>
-                        <li class="flex justify-between text-gray-600  mb-1"> 
+                        <li class="flex justify-between text-black dark:text-white  mb-1"> 
                             <span>Discount:</span> 
                             <span class="text-green-500">- $60.00</span>
                         </li>
-                        <li class="flex justify-between text-gray-600  mb-1"> 
+                        <li class="flex justify-between text-black dark:text-white  mb-1"> 
                             <span>Shipping:</span> 
                             <span>$14.00</span>
                         </li>
@@ -203,9 +165,9 @@
                         </li>
                     </ul>
         
-                    <a class="px-4 py-3 mb-2 inline-block text-lg w-full text-center font-medium text-white bg-black border border-transparent rounded-md hover:bg-green-700" href="#"> Checkout </a>
+                    <a class="px-4 py-3 mb-2 inline-block  text-lg w-full text-center font-medium text-white bg-black border bord dark:bg-black dark:text-white  er-transparent rounded-md hover:bg-green-700" href="#"> Checkout </a>
         
-                    <a class="px-4 py-3 inline-block text-lg w-full text-center font-medium text-black dark: bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100" href="index.html"> Back to shop </a>
+                    <a class="px-4 py-3 inline-block  text-lg w-full text-center font-medium text-black dark: bg-white shado dark:bg-black dark:text-white w-sm border border-gray-200 rounded-md" href="index.html"> Back to shop </a>
         
                 </article> <!-- card end.// -->
                 
@@ -232,20 +194,12 @@
                             <a href="#"> ARCHIVE </a>
                         </li>
                         <li>
-                            <a href="#" > TERMS & CONDITIONS </a>
-                        </li>
-                        <li>
                             <a href="#"> ABOUT US </a>
                         </li>
-                        <ul class="flex space-x-4 ">
-                            <li class=" ">
-                                <i class="fa-brands fa-instagram fa-lg"><a href="wwww.instagram.com/dnmgdx"></a></i>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-envelope-open"><a href="mailto:dnmgdx@gmail.com"></a></i>
-                                </i>
-                            </li>
-                        </ul>
+                        <li>
+                            <a href="#"> INSTAGRAM </a>
+                        </li>
+
                     </ul>
     
                     </aside>
