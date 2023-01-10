@@ -1,0 +1,11 @@
+@keyframes strike {
+    from { text-decoration-color: transparent; }
+    to { text-decoration-color: auto; }
+  }
+  .strike {  
+    text-decoration: line-through;
+    animation: strike 4s linear;
+    height: 5px;
+    width: 100%;
+  }
+  
