@@ -10,7 +10,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'digital-font': ['DS-Digital', 'sans-serif']
+        'digital-font': ['DS-Digital', 'sans-serif'],
+        'vcr-osd': ['VCR OSD Mono', 'sans-serif']
+                                                
       },
     },
   },
