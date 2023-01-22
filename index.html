@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/photoswipe.css">
     <link rel="shortcut icon" href="favicon/favicon.jpeg" type="image/x-icon">
 </head>
-<body class="font-vcr-osd min-h-screen ">
+<body class="font-vcr-osd min-h-screen w-full h-full ">
     
     <header class="">
         <video id="bgVideo" autoplay loop muted defaultmuted playsinline>
@@ -23,20 +23,23 @@
 
        <!--NAVBAR-->
 <div class="">
-    <nav class=" py-2 sticky top-0 z-30">
-        <div class=" max-w-6xl mx-auto relative">
-            <div class="flex justify-center">
-                <div class=" bg-white bg-opacity-10 backdrop-blur-lg drop-shadow-lg px-5 py-2 md:px-10 md:py-5 shadow-xl ">
-                    <a class="strike text-5xl text-center text-black md:text-4xl tracking-widest strike" href="index.html">DNMGD </a>
-                </div>
+  <nav class=" py-2 lg:sticky top-0 z-30">
+      <div class=" max-w-xl mx-1 md:mx-auto lg:mx-auto relative border">
+          <div class="flex justify-between">
+              <div class=" bg-white bg-opacity-10 backdrop-blur-lg drop-shadow-lg px-5 py-2 md:px-10 md:py-5 shadow-xl border-r ">
+                  <a class="strike text-2xl text-center text-white md:text-4xl tracking-widest strike" href="index.html">DNMGD </a>
+              </div>
+              <div class="bg-white bg-opacity-10 backdrop-blur-lg drop-shadow-lg px-5 py-2 md:px-10 md:py-5 shadow-xl border-l">
+                <a class=" text-2xl text-center text-white md:text-4xl tracking-widest " href="menswear.html">SHOP </a>
+              </div>
 
-            </div>
-        </div>
-    </nav>
+          </div>
+      </div>
+  </nav>
 
     <!--NAVBAR ENDS-->
 
-    <section id="home" class=" flex w-full lg:px-8 ">
+    <section id="home" class=" flex lg:px-8 ">
     
         <!--VIDEO DOCUMENTARY-->
         <div class=" mx-auto justify-center px-4 text-white ">
@@ -52,7 +55,7 @@
     <!--VIDEO DOCU ENDS HERE-->
     
 <!--PHOTO GRIDS -->
-<section class="flex contain px-4">
+<section class="flex contain px-2 w-full">
     <div class="grid grid-cols-3 gap-2 lg:grid-cols-3 lg:gap-3 scroll  px-4 py-4 pswp-gallery" id="gallery">
         <div class="pswp-gallery__item">
             <a  
@@ -143,7 +146,7 @@
 
 <!--FOOTER STARTS-->
 
-    <footer class=" mt-10 text-white text-center">
+    <footer class=" mt-2 text-white text-center">
         <div class="container justify-center grid gap-1 max-w-screen-xl mx-auto px-1 uppercase">
             <a href="">general info</a>
             <a href="">contact</a>
@@ -152,14 +155,6 @@
             <a href="">archive</a>
         </div>
 
-        <div class="flex gap-3 justify-center text-center">
-            <div class="block w-16 h-16 text-center">
-               DNMGD
-            </div>
-            <div class="block w-16 h-16 overflow-hidden">
-                BBS
-            </div>
-        </div>
     </footer>
 <!--FOOTER ENDS-->
 </div>

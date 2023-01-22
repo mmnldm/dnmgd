@@ -22,7 +22,7 @@ video#bgVideo {
     left: 0;
     width: 100%;
     height: 4px;
-    background: black;
+    background: white;
     animation-name: strike;
     animation-duration: 10s;
     animation-timing-function: linear;
