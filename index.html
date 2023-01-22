@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/photoswipe.css">
     <link rel="shortcut icon" href="favicon/favicon.jpeg" type="image/x-icon">
 </head>
-<body class="font-vcr-osd min-h-screen">
+<body class="font-vcr-osd min-h-screen ">
     
     <header class="">
         <video id="bgVideo" autoplay loop muted defaultmuted playsinline>
@@ -36,24 +36,24 @@
 
     <!--NAVBAR ENDS-->
 
-    <main class=" flex w-full lg:px-8 ">
+    <section id="home" class=" flex w-full lg:px-8 ">
     
         <!--VIDEO DOCUMENTARY-->
         <div class=" mx-auto justify-center px-4 text-white ">
             <video class="rounded-lg w-full  " controls preload="auto" poster="./vid/thumbnail.png">
                 <source src="./vid/vid.mp4" type="">
             </video>
-            <p class="mt-1 lg:text-xl ">
+            <p class="mt-1 lg:text-xl text-center">
                 DNMGD DCMNTRY
             </p>
         </div>
     
-    </main>
+    </section >
     <!--VIDEO DOCU ENDS HERE-->
     
 <!--PHOTO GRIDS -->
-<div class="flex contain ">
-    <div class="grid grids-cols-1 gap-2 lg:grid-cols-3 lg:gap-3 scroll  px-4 py-4 pswp-gallery" id="gallery">
+<section class="flex contain px-4">
+    <div class="grid grid-cols-3 gap-2 lg:grid-cols-3 lg:gap-3 scroll  px-4 py-4 pswp-gallery" id="gallery">
         <div class="pswp-gallery__item">
             <a  
               href="./imgs/001.webp" 
@@ -135,7 +135,7 @@
           <p class="text-white">EDITORIAL</p>
     </div>
    
-</div>
+</section>
 
 <!--PHOTO GRIDS ENDS-->
 
