@@ -826,6 +826,10 @@ video {
   gap: 2rem;
 }
 
+.gap-9 {
+  gap: 2.25rem;
+}
+
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
@@ -1096,6 +1100,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -1222,6 +1231,14 @@ video {
   text-decoration-line: line-through;
 }
 
+.decoration-1 {
+  text-decoration-thickness: 1px;
+}
+
+.decoration-2 {
+  text-decoration-thickness: 2px;
+}
+
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -1321,6 +1338,10 @@ video {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:border {
+    border-width: 1px;
+  }
+
   .dark\:border-white {
     --tw-border-opacity: 1;
     border-color: rgb(255 255 255 / var(--tw-border-opacity));
