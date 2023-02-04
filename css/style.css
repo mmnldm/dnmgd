@@ -1279,6 +1279,11 @@ video {
   outline-offset: 2px;
 }
 
+.active\:text-green-600:active {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
 @media (prefers-color-scheme: dark) {
   .dark\:border-white {
     --tw-border-opacity: 1;
