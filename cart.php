@@ -1,37 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>DNMGD</title>
-<link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/strike.css" />
+<?php
+require "action.php";
+?>
+<?php include './layout/header.php' ?>
 
-<link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.css" rel="stylesheet" type="text/css" />
-<script src="https://kit.fontawesome.com/1f649878fb.js" crossorigin="anonymous"></script>
-</head>
-<body class="font-vcr-osd bg-gray-200 dark:bg-black dark:text-white">
-
-<!---NAVBAR -->
-    <nav
-      class="mx-auto max-w-screen-xl border-b border-black dark:border-white lg:px-auto"
-    >
-      <div class="flex justify-between py-1 px-2 text-lg lg:text-2xl">
-        <div>
-          <a class="ml-2 strike" href="index.php">DNMGD </a>
-        </div>
-
-        <div class="nocart flex">
-          <a class=" " href="./cart.php"> CART(<span>0</span>) </a>
-        </div>
-      </div>
-      <div class="flex gap-5 justify-center">
-        <a href="shop.php">MENSWEAR</a>
-        <a href="woshop.php">WOMENSWEAR</a>
-      </div>
-    </nav>
 <!--NAVBAR ENDS-->
 
 
@@ -187,35 +158,4 @@
 
 </section>
 
-<footer>
-    <!--FOOTER SECTION BEGINS HERE-->
-    <section class="py- lg:px-8 border-t border-black dark:border-white ">
-        <div class="container max-w-screen-xl mx-auto px-4">
-            <div class="flex flex-wrap">
-                <aside class=" w-full md:w-1/3 lg:w-1/4 mb-5 tracking-wider">
-                    <ul class="mt-2 space-y-1">
-                        <li>
-                            <a href="#"> MEDIA </a>
-                        </li>
-                        <li>
-                            <a href="#"> ARCHIVE </a>
-                        </li>
-                        <li>
-                            <a href="#"> ABOUT US </a>
-                        </li>
-                        <li>
-                            <a href="#"> INSTAGRAM </a>
-                        </li>
-
-                    </ul>
-    
-                    </aside>
-                    
-            </div>
-        </div>
-        
-    </section>
-    </footer>
-	<!--FOOTER SECTION ENDS HERE-->
-</body>
-</html>
+<?php include './layout/footer.php' ?>

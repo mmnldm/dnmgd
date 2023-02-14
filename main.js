@@ -151,7 +151,6 @@ $(document).ready(function () {
   //Add Product into Cart
   $("body").delegate("#product", "click", function (event) {
     var pid = $(this).attr("pid");
-    var details = $("form").serializeArray();
     event.preventDefault();
     $(".overlay").show();
     $.ajax({
@@ -160,8 +159,6 @@ $(document).ready(function () {
       data: {
         addToCart: 1,
         proId: pid,
-        color: details[1].value,
-        size: details[2].value,
       },
       success: function (data) {
         count_item();

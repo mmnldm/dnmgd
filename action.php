@@ -40,8 +40,6 @@ if (isset($_POST["addToCart"])) {
 
 
   $p_id = $_POST["proId"];
-  $color = $_POST["color"];
-  $size = $_POST["size"];
 
   if (isset($_SESSION["uid"])) {
 
@@ -59,7 +57,7 @@ if (isset($_POST["addToCart"])) {
 			"; //not in video
     } else {
       $sql = "INSERT INTO `cart`
-			(`p_id`, `ip_add`, `user_id`, `qty`, `color`, `size`) 
+			(`p_id`, `ip_add`, `user_id`, `qty`) 
 			VALUES ('$p_id','$ip_add','$user_id','1', '$color', '$size')";
       if (mysqli_query($con, $sql)) {
         echo "
