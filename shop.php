@@ -10,9 +10,10 @@ require "action.php";
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>DNMGD</title>
 <link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/strike.css" />
+
 <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.css" rel="stylesheet" type="text/css" />
-<!-- <link rel="stylesheet" href="./css/tailwind.min.css"> -->
 <script src="https://kit.fontawesome.com/1f649878fb.js" crossorigin="anonymous"></script>
 </head>
   <body class="font-vcr-osd dark:bg-black dark:text-white">
