@@ -58,7 +58,7 @@ if (isset($_GET['pro_id'])) {
         </div>
 
         <div class="nocart flex">
-          <a class=" " href="./cart.php"> CART(<span>0</span>) </a>
+          <a class=" " href="./cart.php"> CART(<span class="badge" data-cart-render="item_count">0</span>) </a>
         </div>
       </div>
     </nav>
@@ -173,28 +173,4 @@ if (isset($_GET['pro_id'])) {
       <!-- container .// -->
     </section>
 
-    <footer>
-      <!--FOOTER SECTION BEGINS HERE-->
-      <section class="border-t border-black dark:border-white">
-        <div class="container max-w-screen-xl mx-auto px-4">
-          <div class="flex flex-wrap">
-            <aside class="w-full md:w-1/3 lg:w-1/4 mb-5 tracking-wider">
-              <ul class="mt-2">
-                <li>
-                  <a href="#"> MEDIA </a>
-                </li>
-                <li>
-                  <a href="#"> ARCHIVE </a>
-                </li>
-                <li>
-                  <a href="#"> INSTAGRAM </a>
-                </li>
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </section>
-    </footer>
-    <!--FOOTER SECTION ENDS HERE-->
-  </body>
-</html>
+<?php include './layout/footer.php' ?>
