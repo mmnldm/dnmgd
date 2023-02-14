@@ -22,11 +22,11 @@ require "action.php";
     >
       <div class="flex justify-between py-1 px-2 text-lg lg:text-2xl">
         <div>
-          <a class="ml-2 strike" href="index.html">DNMGD </a>
+          <a class="ml-2 strike" href="index.php">DNMGD </a>
         </div>
 
         <div class="nocart flex">
-          <a class=" " href="./cart.html"> CART(<span>0</span>) </a>
+          <a class=" " href="./cart.php"> CART(<span>0</span>) </a>
         </div>
       </div>
       <div class="flex gap-5 justify-center">
@@ -55,9 +55,9 @@ require "action.php";
                 <div class='border border-black dark:border-white'>
                   <!--PRODUCT CARD -->
                   <article class='shadow-sm rounded'>
-                    <a href='product.html' class='block relative p-1'>
+                    <a href='product.php?pro_id=$pro_id' class='block relative p-1'>
                       <img
-                        src='img/1.png'
+                        src='./admin/product_images/$pro_image'
                         class='mx-auto w-auto'
                         height='350'
                         alt='Product title here'
@@ -65,14 +65,12 @@ require "action.php";
                     </a>
                     <div class='p-4 dark:text-white'>
                       <a
-                        href='product.html'
+                        href='product.php?pro_id=$pro_id'
                         class='block text-black-600 mb-3 hover:text-blue-500'
-                      >
-                        Sample name of the product just goes here
-                      </a>
+                      >$pro_title</a>
 
                       <div class='flex justify-between text-xl tracking-wide'>
-                        <p class='font-semibold'>$99.50</p>
+                        <p class='font-semibold'>" . CURRENCY . " $formatted_price</p>
                         <a
                           class='inline-block dark:text-white text-black text-center border-transparent rounded-md hover:text-blue-700'
                           href='#'
@@ -86,10 +84,6 @@ require "action.php";
             }
         }
         ?>
-
-          
-
-
         </div>
       </div>
     </section>

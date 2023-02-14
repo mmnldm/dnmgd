@@ -30,7 +30,7 @@
             >
               <a
                 class="strike text-2xl text-center text-white md:text-4xl tracking-widest strike"
-                href="index.html"
+                href="index.php"
                 >DNMGD
               </a>
             </div>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,84 +21,11 @@
     <nav class="mx-auto border-b dark:border-white lg:px-auto">
       <div class="flex justify-between px-2 text-lg lg:text-2xl">
         <div>
-          <a class="ml-2 strike" href="index.html">DNMGD </a>
-=======
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>DNMGD SHOP</title>
-<link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/strike.css">
-<link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet" />
-<!-- <link rel="stylesheet" href="./css/tailwind.min.css"> -->
-<link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.css" rel="stylesheet" type="text/css" /><script src="script.js"></script>
-</head>
-<body class="font-vcr-osd bg-gray-200 dark:bg-black dark:text-white ">
-
-<!---NAVBAR -->
-<nav class="mx-auto border-b  dark:border-white lg:px-auto">
-<div class="flex justify-between px-2 text-lg lg:text-2xl">
-<div>
-    <a class="ml-2 line-through" href="index.html">DNMGD </a>
-</div>
-
-<div class="nocart ">
-    <a class=" " href="./cart.html"> CART(<span>0</span>) </a>
-    
-</div>
-</div>
-<div class="flex gap-5 justify-center">
-    <a href="menswear.html">MENSWEAR</a>
-    <a href="womenswear.html">WOMENSWEAR</a>
-    </div>
-</nav>
-<!--NAVBAR ENDED-->
-
-	<!--  PAGE HEADER -->
-	<section class="py-5 sm:py-7 bg-blue-100">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<!-- breadcrumbs start -->
-			<ol class="inline-flex flex-wrap text-gray-600 space-x-1 md:space-x-3 items-center">
-				<li class="inline-flex items-center">
-					<a class="text-gray-600 hover:text-blue-600" href="#">Home</a>  
-					<i class="ml-3 text-gray-400 fa fa-chevron-right"></i>
-				</li>
-				<li class="inline-flex items-center" aria-current="page">
-					<a class="text-gray-600 hover:text-blue-600" href="#"> Cart </a> 
-					<i class="ml-3 text-gray-400  fa fa-chevron-right"></i>
-				</li>
-				<li class="inline-flex items-center"> Order </li>
-			</ol>
-			<!-- breadcrumbs end -->
-		</div><!-- /.container -->
-	</section>
-	<!--  PAGE HEADER .//END  -->
-
-<!--CHECKOUT PAGE -->
-<section class="py-10">
-    <div class="container max-w-screen-xl mx-auto px-4 dark:bg-black">
-<div class="flex flex-col md:flex-row gap-4 lg:gap-8 ">
-<main  class="md:w-2/3 ">
-    <article class="border border-gray-200 shadow-sm rounded p-4 lg:p-6 mb-5 dark:bg-black dark:text-black">
-
-        <h2 class="text-xl font-semibold mb-5 dark:text-black">Guest checkout</h2>
-
-        <div class="grid grid-cols-2 gap-x-3 dark:text-white">
-            <div class="mb-4">
-                <label class="block mb-1"> First name </label>
-                <input class="appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full" type="text" placeholder="Type here">
-            </div>
-            
-            <div class="mb-4">
-                <label class="block mb-1"> Last name </label>
-                <input class="appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full" type="text" placeholder="Type here">
-            </div>
->>>>>>> 1471c9600d9d32a234ed5133a63ee6fdf98e3c57
+          <a class="ml-2 strike" href="index.php">DNMGD </a>
         </div>
 
         <div class="nocart">
-          <a class=" " href="./cart.html"> CART(<span>0</span>) </a>
+          <a class=" " href="./cart.php"> CART(<span>0</span>) </a>
         </div>
       </div>
       <div class="flex gap-5 justify-center">

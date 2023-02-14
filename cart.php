@@ -15,11 +15,11 @@
 <nav class=" mx-auto max-w-screen-xl border-b border-black dark:border-white lg:px-auto">
     <div class="flex justify-between px-2 text-lg lg:text-2xl">
     <div>
-        <a class="ml-2 line-through " href="index.html">DNMGD </a>
+        <a class="ml-2 line-through " href="index.php">DNMGD </a>
     </div>
     
     <div class="nocart ">
-        <a class=" " href="./cart.html"> CART(<span>0</span>) </a>
+        <a class=" " href="./cart.php"> CART(<span>0</span>) </a>
     </div>
     </div>
 	<div class="flex gap-5 justify-center">
@@ -167,9 +167,9 @@
                         </li>
                     </ul>
         
-                    <a class="px-4 py-3 mb-2 inline-block  text-lg w-full text-center font-medium text-white bg-black border bord dark:bg-black dark:text-white  er-transparent rounded-md hover:bg-green-700" href="checkout.html"> Checkout </a>
+                    <a class="px-4 py-3 mb-2 inline-block  text-lg w-full text-center font-medium text-white bg-black border bord dark:bg-black dark:text-white  er-transparent rounded-md hover:bg-green-700" href="checkout.php"> Checkout </a>
         
-                    <a class="px-4 py-3 inline-block  text-lg w-full text-center font-medium text-black dark: bg-white shado dark:bg-black dark:text-white w-sm border border-gray-200 rounded-md" href="index.html"> Back to shop </a>
+                    <a class="px-4 py-3 inline-block  text-lg w-full text-center font-medium text-black dark: bg-white shado dark:bg-black dark:text-white w-sm border border-gray-200 rounded-md" href="index.php"> Back to shop </a>
         
                 </article> <!-- card end.// -->
                 

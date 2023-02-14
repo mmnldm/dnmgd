@@ -1,3 +1,31 @@
+<?php
+require "action.php";
+
+if (isset($_GET['pro_id'])) {
+    $p_id = $_GET['pro_id'];
+
+    $get_pro = "select * from products where product_id=$p_id";
+    $run_query = mysqli_query($con, $get_pro);
+    $row = mysqli_fetch_array($run_query);
+
+    $qty = $row['product_qty'];
+    $pro_cat = $row['product_cat'];
+    $pro_name = $row['product_title'];
+    $pro_price = $row['product_price'];
+    $pro_img = $row['product_image'];
+    $second_img = $row['second_image'];
+    $pro_desc = $row['product_desc'];
+    $formatted_price = number_format($pro_price, '2');
+    $color = $row['color'];
+
+    $get_pro_cat = "select * from categories where cat_id=$pro_cat";
+    $run_pro_cat = mysqli_query($con, $get_pro_cat);
+    $row_pro_cat = mysqli_fetch_array($run_pro_cat);
+
+    $pro_cat_title = $row_pro_cat['cat_title'];
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,16 +54,15 @@
     >
       <div class="flex justify-between py-1 px-2 text-lg lg:text-2xl">
         <div>
-          <a class="ml-2 line-through" href="index.html">DNMGD </a>
+          <a class="ml-2 line-through" href="index.php">DNMGD </a>
         </div>
 
-<body class="font-vcr-osd bg-gray-200 dark:bg-black dark:text-white">
-<!---NAVBAR -->
-<nav class=" mx-auto max-w-screen-xl border-b border-black dark:border-white lg:px-auto">
-<div class="flex justify-between py-1 px-2 text-lg lg:text-2xl">
-<div>
-    <a class="ml-2 line-through decoration-2" href="index.html">DNMGD </a>
-</div>
+        <div class="nocart flex">
+          <a class=" " href="./cart.php"> CART(<span>0</span>) </a>
+        </div>
+      </div>
+    </nav>
+    <!--NAVBAR ENDS-->
 
     <section class="py-4">
       <div class="container max-w-screen-xl mx-auto px-4">
@@ -69,7 +96,7 @@
               <img
                 class="object-cover inline-block"
                 width="400"
-                src="img/1.png"
+                src="./admin/product_images/<?php echo "$pro_img"; ?>"
                 alt="Product title"
               />
             </div>
@@ -78,7 +105,7 @@
                 href="#"
                 class="inline-block border border-gray-200 p-1 rounded-md hover:border-blue-500"
               >
-                <img class="w-14 h-14" src="img/1.png" alt="Product title" />
+                <img class="w-14 h-14" src="./admin/product_images/<?php echo "$pro_img"; ?>" alt="Product title" />
               </a>
               <a
                 href="#"
@@ -86,7 +113,7 @@
               >
                 <img
                   class="w-14 h-14 object-cover"
-                  src="img/2.png"
+                  src="./admin/product_images/<?php echo "$second_img"; ?>"
                   alt="Product title"
                 />
               </a>
@@ -95,71 +122,30 @@
           </aside>
           <main>
             <h2 class="font-semibold text-2xl mb-4">
-              Sweater Men New Arrival Casual Pullover <br />
-              Men Long Sleeve
+              <?php echo "$pro_name"; ?>
             </h2>
 
-            <div class="flex flex-wrap items-center space-x-2 mb-2">
-              <img
-                class="d-inline-block h-4"
-                src="images/misc/stars-active.svg"
-                alt="Rating"
-              />
-              <span class="text-yellow-500">9.3</span>
-
-              <svg
-                width="6px"
-                height="6px"
-                viewbox="0 0 6 6"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="3" cy="3" r="3" fill="#DBDBDB" />
-              </svg>
-
-              <span class="text-gray-400">
-                <i class="fa fa-shopping-bag mr-2"></i> 154 orders
-              </span>
-
-              <svg
-                width="6px"
-                height="6px"
-                viewbox="0 0 6 6"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="3" cy="3" r="3" fill="#DBDBDB" />
-              </svg>
-
-              <span class="text-green-500">Verified</span>
-            </div>
-
             <p class="mb-4 font-semibold text-xl">
-              $98.00
-              <span class="text-base font-normal">/1 box</span>
+              <?php echo CURRENCY . " " . "$formatted_price"; ?>
+              <span class="text-base font-normal">/<?php echo $qty; ?> box</span>
             </p>
 
-            <p class="mb-4 text-black">
-              Virgil Abloh’s Off-White is a streetwear-inspired collection that
-              continues to break away from the conventions of mainstream
-              fashion. Made in Italy, these black and brown Odsy-1000 low-top
-              sneakers.
+            <p class="mb-4 dark:text-white">
+              <?php echo "$pro_desc"; ?>
             </p>
 
-            <ul class="mb-5 text-white">
+            <ul class="mb-5 dark:text-white">
               <li class="mb-1">
                 <b class="font-medium w-36 inline-block">Model#:</b>
                 <span>Odsy-1000</span>
               </li>
               <li class="mb-1">
                 <b class="font-medium w-36 inline-block">Color:</b>
-                <span>Brown</span>
+                <span><?php echo $color; ?></span>
               </li>
               <li class="mb-1">
                 <b class="font-medium w-36 inline-block">Delivery:</b>
                 <span>Russia, USA & Europe</span>
-              </li>
-              <li class="mb-1">
-                <b class="font-medium w-36 inline-block">Color:</b>
-                <span>Brown</span>
               </li>
             </ul>
 
@@ -167,7 +153,7 @@
             <div class="flex flex-wrap gap-2">
               <a
                 class="px-4 py-2 inline-block text-white bg-yellow-500 border border-transparent rounded-md hover:bg-yellow-600"
-                href="checkout.html"
+                href="checkout.php"
               >
                 Buy now
               </a>
