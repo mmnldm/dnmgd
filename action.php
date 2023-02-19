@@ -119,7 +119,7 @@ if (isset($_POST["Common"])) {
     $sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,b.id,b.qty, b.color, b.size FROM products a,cart b WHERE a.product_id=b.p_id AND b.user_id='$_SESSION[uid]' LIMIT 0,5";
   } else {
     //When user is not logged in this query will execute
-    $sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.ip_add='$ip_add' AND b.user_id < 0 LIMIT 0,5";
+    $sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,a.color,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.ip_add='$ip_add' AND b.user_id < 0 LIMIT 0,5";
   }
   $query = mysqli_query($con, $sql);
   if (isset($_POST["getCartItem"])) {
@@ -134,7 +134,6 @@ if (isset($_POST["Common"])) {
         $product_image = $row["product_image"];
         $cart_item_id = $row["id"];
         $color = $row["color"];
-        $size = $row["size"];
         $qty = $row["qty"];
         echo '
 
@@ -174,52 +173,48 @@ if (isset($_POST["Common"])) {
         $product_price = $row["product_price"];
         $product_image = $row["product_image"];
         $color = $row["color"];
-        $size = $row["size"];
         $cart_item_id = $row["id"];
         $qty = $row["qty"];
 
         echo
         '
+            <div class="flex flex-wrap lg:flex-row gap-5 mb-4">
+              <div class="w-full lg:w-2/5 xl:w-2/4">
+                <figure class="flex leading-5">
+                  <div>
+                    <div class="block w-16 h-16 rounded border border-gray-200 overflow-hidden">
+                      <img src="./admin/product_images/' . $product_image . '" alt="Title">
+                    </div>
+                  </div>
+                  <figcaption  class="ml-3">
+                    <p><a href="#" class="hover:text-blue-600">' . $product_title . '</a></p>
+                    <p class="mt-1 text-gray-400"> Color: ' . $color . ', Type: Jeans </p>
+                  </figcaption>
+                </figure>
+              </div>
 
-     
-            <div class="mt-4" style="display: flex !important; justify-content: space-between !important;">
-								
-								<input type="hidden" name="product_id[]" value="' . $product_id . '"/>
-								<input type="hidden" name="" value="' . $cart_item_id . '"/>
-								<div class="tb-d"><img class="img-responsive cart_img" src="./admin/product_images/' . $product_image . '"></div>
-								<div class="tb-d" style="display: block !important">
-                <p class="text-white">' . $product_title . '</p>
-                <p class="text-white">
-                color: ' . $color . '
-                </p>
-                <p class="text-white">
-                size: ' . $size . '
-                </p>
+              <div>
+                <div class="leading-5">
+                  <p class="font-semibold not-italic">$' . $product_price . ' </p>
+                  <small class="text-gray-400"> $' . $product_price . ' / per item </small> 
                 </div>
-								<div class="tb-d qtt"><input type="text" class="form-control qty" value="' . $qty . '" ></div>
-                
-								<div class="tb-d price">' . $product_price . '</div>
-                
-                <div class="tb-d"><input type="text" class="form-control total" value="' . $product_price . '" readonly="readonly"></div>
+              </div>
+              <div class="flex-auto">
+                <div class="float-right">
+                  <a class="px-4 py-2 inline-block  bg-white shadow-sm border border-gray-200 rounded-md hover:bg-red-500 dark:bg-black dark:hover:bg-red-600 remove" href="#" remove_id="' . $product_id . '">  Remove </a>
+                </div>
+              </div>
+            </div>
 
-
-                <div class="tb-d">
-									<div class="btn-group">
-										<a href="#" remove_id="' . $product_id . '" class="btn btn--danger cart__remove remove" title="Remove tem"><i class="icon icon anm anm-times-l"></i></a>
-							      <a href="#" update_id="' . $product_id . '" class="btn3 btn-primary update"><i class="fa fa-refresh"></i></a>
-									</div>
-								</div>
-
-							</div>
-                ';
+            <hr class="my-4">
+          ';
       }
 
 
-      echo '<div class="row pt-3">
-							<div class="col-md-8"></div>
-							<div class="col-md-4 d-flex justify-content-end">
-								<b class="net_total" id="net_total" style="font-size:18px;"></b>
-					</div>';
+      echo '
+      <h6 class="font-bold">Free Delivery within 1-2 weeks</h6>
+			<p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>';
+
       if (!isset($_SESSION["uid"])) {
         echo '<input type="submit" name="login_user_with_product" class="btn btn-primary" value="Ready to Checkout" >
 							</form>';
