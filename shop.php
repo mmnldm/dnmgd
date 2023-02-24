@@ -5,7 +5,7 @@ require "action.php";
 <?php include './layout/header.php' ?>
     <!--NAVBAR ENDS-->
 
-    <div class="container">
+    <div class="container bg-slate-300">
         <div class="grid-cols-12" id="product_msg">
         </div>
     </div>
@@ -13,7 +13,7 @@ require "action.php";
     <section class="py-12">
       <div class="container max-w-screen-xl mx-auto px-4">
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml:grid-cols-1 mo:grid-cols-1 lg:grid-cols-4"
         >
         <?php
         $product_query = "SELECT * FROM products ORDER BY `product_id` DESC LIMIT 0,4";
@@ -46,8 +46,8 @@ require "action.php";
                       <div class='flex justify-between text-xl tracking-wide'>
                         <p class='font-semibold'>" . CURRENCY . " $formatted_price</p>
 
-                         <button class='btn btn-addto-cart add' pid='$pro_id' id='product'>
-                              Add To Cart
+                         <button class='btn btn-addto-cart add fa-solid fa-lg fa-plus ' pid='$pro_id' id='product'>
+                        
                           </button>
                     
                       </div>

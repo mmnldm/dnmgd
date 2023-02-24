@@ -11,7 +11,7 @@
 <script src="https://kit.fontawesome.com/1f649878fb.js" crossorigin="anonymous"></script>
 </head>
   <body class="font-vcr-osd bg-slate-300 dark:bg-black dark:text-white">
-  <marquee height='40' class="border-b border-white dark:bg-slate-300">
+  <marquee height='30' class="bg-black text-white">
     This is a sample text ...
 </marquee>
     <!---NAVBAR -->
@@ -24,10 +24,10 @@
         </div>
 
         <div class="nocart flex">
-          <a class="" href="./cart.php"> CART(<span class="badge" data-cart-render="item_count">0</span>) </a>
+          <a class="" href="./cart.php"> CART[<span class="badge" data-cart-render="item_count">0</span>] </a>
         </div>
       </div>
-      <div class="flex gap-5 justify-center">
+      <div class="flex gap-5 justify-center tracking-widest">
         <a href="shop.php">MENSWEAR</a>
         <a href="woshop.php">WOMENSWEAR</a>
       </div>

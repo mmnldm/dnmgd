@@ -61,7 +61,7 @@ require "action.php";
 
               <div class="grid lg:grid-cols-2 gap-x-3">
                 <div class="mb-4">
-                  <label class="block mb-1"> Phone </label>
+                  <label class="block mb-1 dark:text-white"> Phone </label>
                   <div class="flex w-full">
                     <input
                       class="appearance-none w-24 border border-gray-200 bg-gray-100 rounded-tl-md rounded-bl-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400"
@@ -78,7 +78,7 @@ require "action.php";
                 </div>
 
                 <div class="mb-4">
-                  <label class="block mb-1"> Email </label>
+                  <label class="block mb-1 dark:text-white"> Email </label>
                   <input
                     class="appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full"
                     type="email"
@@ -133,7 +133,7 @@ require "action.php";
 
               <div class="grid md:grid-cols-3 gap-x-3">
                 <div class="mb-4 md:col-span-2">
-                  <label class="block mb-1 dark:text-white"> Address* </label>
+                  <label class="block mb-1 dark:text-white"> Country* </label>
                   <input
                     class="appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full"
                     type="text"
