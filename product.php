@@ -87,7 +87,7 @@ if (isset($_GET['pro_id'])) {
 
     <section class="py-10">
       <div class="container max-w-screen-xl mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 mo:grid-cols-1 gap-8">
           <aside>
             <!-- gallery -->
             <div
