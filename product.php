@@ -47,7 +47,7 @@ if (isset($_GET['pro_id'])) {
     ></script>
   </head>
 
-  <body class="font-vcr-osd dark:bg-black dark:text-white">
+  <body class="font-vcr-osd bg-slate-300 dark:bg-black dark:text-white">
     <!---NAVBAR -->
     <nav
       class="mx-auto max-w-screen-xl border-b border-black dark:border-white lg:px-auto"
@@ -87,7 +87,7 @@ if (isset($_GET['pro_id'])) {
 
     <section class="py-10">
       <div class="container max-w-screen-xl mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 mo:grid-cols-1 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-2 mo:grid-cols-1 gap-8">
           <aside>
             <!-- gallery -->
             <div
@@ -95,7 +95,7 @@ if (isset($_GET['pro_id'])) {
             >
               <img
                 class="object-cover inline-block"
-                width="400"
+                width="300"
                 src="./admin/product_images/<?php echo "$pro_img"; ?>"
                 alt="Product title"
               />

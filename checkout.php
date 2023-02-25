@@ -16,7 +16,7 @@ require "action.php";
             <i class="ml-3 text-gray-400 fa fa-chevron-right"></i>
           </li>
           <li class="inline-flex items-center" aria-current="page">
-            <a class="text-gray-600 hover:text-blue-600" href="#"> Cart </a>
+            <a class="text-gray-600 hover:text-blue-600" href="cart.php"> Cart </a>
             <i class="ml-3 text-gray-400 fa fa-chevron-right"></i>
           </li>
           <li class="inline-flex items-center">Order</li>

@@ -12,7 +12,7 @@
 </head>
   <body class="font-vcr-osd bg-slate-300 dark:bg-black dark:text-white">
   <marquee height='30' class="bg-black text-white">
-    This is a sample text ...
+WELCOME TO DNMGD SHOPPING EXPERIENCE, ALL DELIVERY WITHIN NIGERIA IS FREE. HAPPY SHOPPING - DNMGD
 </marquee>
     <!---NAVBAR -->
     <nav
